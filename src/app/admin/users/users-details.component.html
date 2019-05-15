@@ -1,0 +1,168 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">User Details</div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="image-wrapper text-center">
+                        <img src="assets/images/image1.jpg" class="image-responsive" width="40%" height="60%">
+                    </div>
+                    <br><br>
+                    <div class="containertable" style="text-align:center">
+                        <table class="table table-bordered">
+                            <tbody *ngFor="let user of usersdetails">
+                                <tr>
+                                    <td>Name</td>
+                                    <td>{{user.name}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Email Id</td>
+                                    <td>donodeakshay@gmail.com</td>
+                                </tr>
+                                <tr>
+                                    <td>Address</td>
+                                    <td>Pohara</td>
+                                </tr>
+                                <tr>
+                                    <td>Contact</td>
+                                    <td>1234567890</td>
+                                </tr>
+                                <tr>
+                                    <td>City</td>
+                                    <td>Lakhani</td>
+
+                                </tr>
+                                <tr>
+                                    <td>State</td>
+                                    <td>MH</td>
+                                </tr>
+                                <tr>
+                                    <td>Gender</td>
+                                    <td>Male</td>
+                                </tr>
+                                <tr>
+                                    <td>School Name</td>
+                                    <td>Samarth Vidyalaya Lakhani</td>
+                                </tr>
+                                <tr>
+                                    <td>DOB</td>
+                                    <td>27/12/1996</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Bio</td>
+                                    <td>
+                                        <p>
+                                            So, you probably already know how to add your website link in your Instagram
+                                            bio.
+                                        </p>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div id="tabs" #tabs>
+
+                        <ul class="nav nav-tabs text-center">
+
+                            <li class="nav-item active">
+                                <a class="nav-link upcoming" href="#shots" data-toggle="tab">Shots
+                                </a>
+
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link upcoming" href="#friends" data-toggle="tab">Friends</a>
+                            </li>
+
+                        </ul>
+
+                        <div class="tab-content">
+                            <div id="shots" class="tab-pane fade active show">
+                                <div id="tab-activity">
+                                    <div class="activity">
+                                        <div class="imgs-profile media">
+                                            <a class="float-left" href="#">
+                                                <img src="assets/images/image2.jpg"
+                                                    class="media-object rounded-circle mr-3" alt="">
+                                            </a>
+                                            <div class="media-body user-shots">
+                                                <strong>Akshay</strong>
+                                                started following
+                                                <strong>Maddy</strong>
+                                                <br>
+                                                <small class="text-muted">
+                                                    2 days ago at 1:30 pm
+
+                                                </small>
+                                                <p>
+                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                                                    ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                                    aliquip ex ea commodo consequat.
+                                                </p>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div id="friends" class="tab-pane fade">
+                                <div class="rows friend-box">
+
+                                    <div class="col-md-3 col-6 ">
+                                        <a href="#" class="friend-img">
+                                            <img class="thumbnail img-fluid" src="assets/images/img1.jpg" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 col-6">
+                                        <a href="#" class="friend-img">
+                                            <img class="thumbnail img-fluid" src="assets/images/img2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <a href="#" class="friend-img">
+                                            <img class="thumbnail img-fluid" src="assets/images/img3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <a href="#" class="friend-img">
+                                            <img class="thumbnail img-fluid" src="assets/images/img4.jpg" alt="">
+                                        </a>
+                                    </div>
+
+
+                                    <div class="col-md-3 col-6">
+                                        <a href="#" class="friend-img">
+                                            <img class="thumbnail img-fluid" src="assets/images/img1.jpg" alt="">
+                                        </a>
+                                    </div>
+
+                                    <div class="col-md-3 col-6">
+                                        <a href="#" class="friend-img">
+                                            <img class="thumbnail img-fluid" src="assets/images/img2.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <a href="#" class="friend-img">
+                                            <img class="thumbnail img-fluid" src="assets/images/img3.jpg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 col-6">
+                                        <a href="#" class="friend-img">
+                                            <img class="thumbnail img-fluid" src="assets/images/img4.jpg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

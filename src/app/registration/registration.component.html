@@ -1,0 +1,101 @@
+<div class="" id="login-page">
+    
+  <div class="form-box">
+    <div class="form-logo">
+      <p class="text-center"><img src="../assets/images/lvk-logo.png" alt="logo"></p>
+    </div>
+    
+    <form (ngSubmit)="registerNewUser()" #userForm="ngForm" >
+      <div class="row">
+        <div class="col-sm-6">
+          <label for="name">Name</label>
+          <input type="text" class="form-control box1" placeholder="Name" id="name" name="name" [(ngModel)]="user.name">
+        </div>
+        <div class="col-sm-6">
+          <label for="email">Email</label>
+          <input type="email" class="form-control" placeholder="Email" id="email" name="email" [(ngModel)]="user.email">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <label for="address">Address</label>
+          <input type="text" class="form-control" placeholder="address" id="address" name="address"
+            [(ngModel)]="user.address">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <label for="state">State</label>
+          <select class="form-control state box1" id="state" name="state" [(ngModel)]="user.state">
+            <option value="">Select State</option>
+            <option>Maharashtra</option>
+            <option>MP</option>
+          </select>
+        </div>
+        <div class="col-sm-6">
+          <label for="city">City</label>
+          <select class="form-control state" id="city" name="city" [(ngModel)]="user.city">
+            <option value="">Select City</option>
+            <option>Mumbai</option>
+            <option>Pune</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-sm-12">
+          <label for="school">School</label>
+          <select class="form-control state" id="school" name="user_school" [(ngModel)]="user.schoolName">
+            <option value="">Select School</option>
+            <option>M.H</option>
+            <option>KB</option>
+          </select>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <label for="username">Username</label>
+          <input type="text" class="form-control box1" placeholder="Username" id="username" name="username" [(ngModel)]="user.username">
+        </div>
+        <div class="col-sm-6">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" placeholder="Password" id="password" name="password" [(ngModel)]="user.password">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <label for="contact">Contact Number</label>
+          <input type="number" class="form-control" placeholder="contact no" id="contact" name="contact" [(ngModel)]="user.contact">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <legend class="text-label">Gender</legend>
+          <div class="form-check-inline">
+            <label class="form-check-label" for="radio1">
+              <input type="radio" class="form-check-input" id="radio1" name="gender" [(ngModel)]="user.gender" value="Male" checked>Male
+            </label>
+          </div>
+          <div class="form-check-inline">
+            <label class="form-check-label" for="radio2">
+              <input type="radio" class="form-check-input" id="radio2" name="gender" [(ngModel)]="user.gender" value="Female" >Female
+            </label>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <label for="Dob">Date Of Birth</label>
+          <input type="date" class="form-control" placeholder="DOB" id="dob" name="dob" [(ngModel)]="user.dateOfBirth">
+        </div>
+      </div>
+      <input type="submit" class="btn btn-social" value="SIGNUP" false >
+
+      <a class="login-action" title="Signi in" style="cursor: pointer" routerLink="home" (click)="xyz()" >
+        Have an account
+      </a>
+    </form>
+  </div>
+</div>
+
+<footer class="login-footer text-center">
+  Created By
+</footer>

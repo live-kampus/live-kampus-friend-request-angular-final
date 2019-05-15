@@ -1,0 +1,89 @@
+.rows {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+.col-md-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.thumbnail {
+    display: block;
+    padding: 4px;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+.img-fluid {
+    max-width: 100%;
+    /* height: 100%; */
+    width: 130px;
+    height: 130px;
+}
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.friend-img{
+    display: block;
+}
+
+.tab-content{
+    background-color: #fff;
+    border-radius: 0;
+    padding: 10px;
+}
+.tab-content > .active {
+    display: block;
+}
+.activity > .imgs-profile {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 15px;
+    font-size: 14px;
+    padding-top: 15px;
+}
+.float-left {
+    float: left !important;
+}
+.activity .media-object {
+    width: 48px;
+    vertical-align: middle;
+}
+.activity .media-body {
+    line-height: 18px;
+    padding-left: 15px;
+    width: 100%;
+}
+b, strong {
+    font-weight: bolder;
+}
+.text-muted {
+    color: #6c757d !important;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0.75rem;
+}
+.media-body {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+}
+
+.user-shots{
+    text-align: left;
+}
+.container{
+    margin-left: 280px;
+    position: absolute;
+    top: 100px;
+    }

@@ -1,0 +1,130 @@
+<div class="container">
+<h2 class="cheader">
+    City List
+</h2>
+<table class="table table-bordered city-table">
+    <thead class="thead-light">
+        <tr>
+            <th>City Code</th>
+            <th>City Name</th>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Thane</td>
+            <td>
+                <button type="button" class="btn btn-primary view-btn" data-toggle="modal" data-target="#viewModal">View</button>
+            </td>
+            <td>
+                <button type="button" class="btn btn-primary edit-btn" data-toggle="modal" data-target="#editModal">Edit</button>
+            </td>
+            <td>
+                <label class="switch">
+                    <input type="checkbox" checked>
+                    <span class="slider round"></span>
+                </label>
+            </td>
+        </tr>
+    </tbody>
+</table>
+
+<!-- City Details -->
+<div class="modal fade" id="viewModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">City Details</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td>City Code</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>City Name</td>
+                            <td>Thane</td>
+                        </tr>
+                        <tr>
+                            <td>state</td>
+                            <td>Maharashtra</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+    </div>
+</div>
+
+<!-- Edit City -->
+<div class="modal fade" id="editModal" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title">Edit City</h4>
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form action="">
+                    <div class="form-group">
+                        <label for="cityc" class="form-label">City Code</label>
+                        <input type="text" class="form-control" id="cityc">
+                    </div>
+                    <div class="form-group">
+                        <label for="cityn" class="form-label">City Name</label>
+                        <input type="text" class="form-control" id="cityn">
+                    </div>
+                    <div class="form-group">
+                        <label for="citys" class="form-label">State</label>
+                        <input type="text" class="form-control" id="citys">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+</div>
+
+
+
+<!-- <ng-template #content1 let-modal class="modal-temp">
+    <div class="modal-box">
+        <div class="modal-header">
+            <h4 class="modal-title" id="modal-basic-title">Edit</h4>
+            <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="show-details">
+                <form action="">
+                    <div class="form-group">
+                        <label for="cityc" class="form-label">City Code</label>
+                        <input type="text" class="form-control" id="cityc">
+                    </div>
+                    <div class="form-group">
+                        <label for="cityn" class="form-label">City Name</label>
+                        <input type="text" class="form-control" id="cityn">
+                    </div>
+                    <div class="form-group">
+                        <label for="citys" class="form-label">State</label>
+                        <input type="text" class="form-control" id="citys">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Update</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</ng-template> -->
+
+

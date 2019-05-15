@@ -1,0 +1,80 @@
+<div class="container">
+    <div class="card event-details">
+        <div class="card-header  ">Event Details</div>
+        <div class="card-body">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6 ">
+                        <div class="text-center">
+                            <img src="assets/images/img1.jpg" class="img-responsive" width="40%" height="70%">
+
+                            <br>
+                            <br>
+
+                            <button type="button" class="btn " style="background-color: blueviolet">Edit</button>
+                            &nbsp;
+                            <button type="button" class="btn " style="background-color: blueviolet">View</button>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-md-6">
+
+                        <table class="table table-bordered">
+
+                            <tbody>
+
+                                <tr>
+
+                                    <td> Event Topic : </td>
+                                    <td>{{events.eventTopic}} </td>
+                                </tr>
+                                <tr>
+                                    <td> Event Name : </td>
+                                    <td>{{events.eventName}}</td>
+                                </tr>
+                                <tr>
+                                    <td>Date : </td>
+                                    <td>
+                                        {{events.date | date}}
+
+                                    </td>
+
+                                </tr>
+                                <tr>
+                                    <td> Event Venue : </td>
+                                    <td> {{events.eventVenue}} </td>
+                                </tr>
+
+                                <tr>
+                                    <td> Event host :</td>
+                                    <td>{{events.eventHost}} </td>
+                                </tr>
+                                <tr>
+                                    <td> Total no of people :</td>
+                                    <td>{{events.totNoOfPeople}} </td>
+                                </tr>
+                                <tr>
+                                    <!-- <img src="mumbai.jpg">
+                                                          <img src="logo.jpg">
+                                                          <img src="falls2.jpg">
+                                                          <img src="paris.jpg">
+                                                          <img src="nature.jpg">
+                                                          <img src="mist.jpg">
+                                                          <img src="paris.jpg"> -->
+
+                                </tr>
+
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
